@@ -6,6 +6,8 @@ public class Jogo {
 	
 	public static void main(String[] args) {
 		
+		
+		
 //		
 //		String nome = JOptionPane.showInputDialog("Digite o nome do jogador");
 //		Jogador jogador = new Jogador(nome);
@@ -14,7 +16,9 @@ public class Jogo {
 		
 		Jogador.mostrarTempo();
 		
-		Math.PI;
+		JOptionPane.showMessageDialog(null, "Ola");
+		
+		//Math.PI;
 		
 //		jogador.receceberAntidoto();
 //		System.out.println(jogador.toString());

@@ -11,7 +11,7 @@ public class Banco {
 		System.out.println(conta.getSaldo());
 		System.out.println(conta.getJuros());
 
-		Conta conta2 = new Conta();
+		//Conta conta2 = new Conta();
 
 	}
 

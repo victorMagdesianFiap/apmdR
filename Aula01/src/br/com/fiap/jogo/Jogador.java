@@ -2,9 +2,10 @@ package br.com.fiap.jogo;
 
 import javax.swing.JOptionPane;
 
-public class Jogador extends Object{
+public abstract class Jogador extends Object{
 	
-	private  String classe = "Mago";
+	private static final double GRAVIDADE = 1;
+	private String classe = "Mago";
 	private String nome;
 	private int xp;
 	private int hp;
@@ -17,6 +18,8 @@ public class Jogador extends Object{
 		classe = "Guerreiro";
 	}
 	
+	
+	
 	//sobrecarga de método
 	public Jogador(String nome) {
 		this.nome = nome;
@@ -25,7 +28,7 @@ public class Jogador extends Object{
 		this.envenenado = false;
 	}
 	
-	
+	public abstract void mover();
 	
 	public static void mostrarTempo() {
 		System.out.println("Tempo 1:00");
