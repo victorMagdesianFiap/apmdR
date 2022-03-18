@@ -5,17 +5,20 @@ public class RecursosHumanos {
 	public static void main(String[] args) {
 		Engenheiro engenheiro = new Engenheiro();
 		engenheiro.setSalarioBase(5000);
-		System.out.println("Salario do engenheiro = " + engenheiro.calcularSalario());
+		System.out.println("Salario do engenheiro = " + 
+		engenheiro.calcularSalario());
 		
 		Presidente presidente = new Presidente();
 		presidente.setValorDasCotas(10000);
 		presidente.setSalarioBase(8000);
-		System.out.println("Salario do presidente = " + presidente.calcularSalario());
+		System.out.println("Salario do presidente = " + 
+		presidente.calcularSalario());
 		
 		Presidente presidenteRegional = new Presidente();
 		presidenteRegional.setValorDasCotas(2000);
 		presidenteRegional.setSalarioBase(5000);
-		System.out.println("Salario do presidenteRegional = " + presidenteRegional.calcularSalario());
+		System.out.println("Salario do presidenteRegional = " + 
+		presidenteRegional.calcularSalario());
 
 		Gerente gerente = new Gerente();
 		gerente.setSalarioBase(3000);
@@ -28,6 +31,9 @@ public class RecursosHumanos {
 		folhaDePagamento.registrar(gerente);
 		folhaDePagamento.registrar(engenheiro);
 		System.out.println("TOTAL = " + folhaDePagamento.getPagamentoTotal());
+		
+		gerente.setSenha("0000");
+		folhaDePagamento.loggar(gerente, "0000");
 		
 	}
 

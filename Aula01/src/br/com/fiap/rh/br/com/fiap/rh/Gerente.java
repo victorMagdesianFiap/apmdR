@@ -1,9 +1,10 @@
 package br.com.fiap.rh;
 
-public class Gerente extends Empregado {
+public class Gerente extends Empregado implements FuncionarioAutenticado {
 
 	private String area;
 	private double bonus;
+	private String senha;
 
 	@Override
 	public double calcularSalario() {
@@ -24,6 +25,17 @@ public class Gerente extends Empregado {
 
 	public void setBonus(double bonus) {
 		this.bonus = bonus;
+	}
+
+	@Override
+	public boolean autenticar(String senha) {
+		return this.senha == senha;
+	}
+
+	@Override
+	public void setSenha(String senha) {
+		this.senha = senha;
+		
 	}
 
 }

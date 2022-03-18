@@ -12,5 +12,9 @@ public class FolhaDePagamento {
 	public double getPagamentoTotal() {
 		return pagamentoTotal;
 	}
+	
+	public void loggar(FuncionarioAutenticado funcionario, String senha) {
+		System.out.println(funcionario.autenticar(senha)?"sucesso":"falha");		
+	}
 
 }
